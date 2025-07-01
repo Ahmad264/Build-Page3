@@ -19,16 +19,14 @@ const MidProjectCard = ({ project, setShowPopup }) => {
   return (
     <div 
       className="group cursor-pointer w-full" 
-      onClick={handleClick}
-    >
+      onClick={handleClick}>
       <div
         className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-slate-700 mb-3"
         style={{
           aspectRatio: "316/432",
           maxWidth: "316px",
           margin: "1rem",
-        }}
-      >
+        }}>
         <img
           src={project.image}
           alt={project.title}
@@ -49,8 +47,7 @@ const MidProjectCard = ({ project, setShowPopup }) => {
               <span
                 key={idx}
                 className="text-[0.6rem] font-semibold px-2 py-[2px] bg-[#bceaff] dark:bg-slate-900/80 rounded-full text-[#0600a6] dark:text-white shadow-sm"
-                style={{ fontFamily: "'Poppins', sans-serif" }}
-              >
+                style={{ fontFamily: "'Poppins', sans-serif" }}>
                 {tag}
               </span>
             ))}
@@ -63,8 +60,7 @@ const MidProjectCard = ({ project, setShowPopup }) => {
           style={{
             fontFamily: "'Poppins', sans-serif",
             fontSize: "1rem",
-          }}
-        >
+          }}>
           {project.title}
         </h3>
         {project.description && (
@@ -77,8 +73,7 @@ const MidProjectCard = ({ project, setShowPopup }) => {
           style={{
             fontFamily: "'Poppins', sans-serif",
             color: project.free ? "#059669" : "#007bff",
-          }}
-        >
+          }}>
           {project.free ? "Free" : project.price || "₹XXX"}
         </span>
       </div>
