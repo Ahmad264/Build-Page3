@@ -24,9 +24,9 @@ const MidProjectCard = ({ project, setShowPopup }) => {
       <div
         className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-slate-700 mb-3"
         style={{
-          aspectRatio: "316/432", // Maintain aspect ratio
-          maxWidth: "316px",      // Max size for larger screens
-          margin: "1rem",       // Center on larger screens
+          aspectRatio: "316/432",
+          maxWidth: "316px",
+          margin: "1rem",
         }}
       >
         <img
